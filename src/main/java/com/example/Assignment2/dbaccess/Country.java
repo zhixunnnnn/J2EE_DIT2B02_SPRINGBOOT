@@ -6,6 +6,8 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+
+import java.io.Serial;
 import java.io.Serializable;
 
 /**
@@ -14,6 +16,7 @@ import java.io.Serializable;
 @Entity
 @Table(name = "country")
 public class Country implements Serializable {
+    @Serial
     private static final long serialVersionUID = 1L;
 
     @Id
